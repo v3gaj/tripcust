@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Tripcust</title>
+		<%= csrf_meta_tags %>
+		<%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+		<%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,200i,300,300i,400,400i,600,600i,700,700i,900,900i" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Racing+Sans+One" rel="stylesheet">
+	</head>
+	<body>
+		<header>
+			<div>
+				<%= link_to "Trip Customizers", root_path, class: "title" %>	
+			</div>
+		  	<nav>
+				<ul>
+					<li><%= active_link_to "Inicio", root_path, active: :exclusive %></li>
+					<li><%= active_link_to "Servicios", services_path, active: :exclusive %></li>
+	          		<li><%= active_link_to "Sobre Nosotros", about_path, active: :exclusive %></li>
+	          		<li><%= active_link_to "Contacto", contact_path, active: :exclusive %></li>
+	          	</ul>	
+			</nav>
+		</header>
+		<%= yield %>
+		<footer>
+			<div class="footer_wrapper">
+				<div class="footer_div">
+					
+				</div>
+				<div class="footer_div">
+					
+				</div>
+				<div class="footer_div">
+					<%= link_to "Trip Customizers", root_path %>
+					<%= link_to root_path do %>
+			    		<div class="title"><span>Trip</span>Customizers</div>
+			    	<%end%>
+			    	<div class="footer_social">
+				    	<a href="#"><i class="fa fa-facebook"></i></a>
+						<a href="#"><i class="fa fa-instagram"></i></a>
+			    	</div>
+				</div>
+			</div>
+		</footer>
+	</body>
+</html>

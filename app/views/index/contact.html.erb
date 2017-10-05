@@ -1,0 +1,30 @@
+<div class="view_header">
+	<%= image_tag 'bg.jpg' %>
+	<h6>Contacto</h6>
+</div>
+<div class="second_title">
+	<h4>Información de Contacto</h4>
+	<h2>Pongase en Contacto con Nosotros</h2>
+</div>
+<div class="contact_info_wrapper">
+	<div class="contact_info">
+		<%= image_tag 'iconLocation.png' %>
+		<span>Dirección:</span>
+		<p>Heredia, Costa Rica</p>
+	</div>
+	<div class="contact_info">
+		<%= image_tag 'iconEmail.png' %>
+		<span>Email:</span>
+		<p>info@tripcustomizers.com</p>
+	</div>
+	<div class="contact_info">
+		<%= image_tag 'iconTel.png' %>
+		<span>Telefono:</span>
+		<p>506 83115197</p>
+	</div>
+</div>
+<div class="contact_form">
+	<div class="form">
+		<%= render :file => '/messages/new' %>
+	</div>
+</div>
