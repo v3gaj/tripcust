@@ -183,7 +183,7 @@ h6{
 }
 
 .second_title{
-	margin: 100px 0 65px 0;
+	padding: 100px 0 65px 0;
 }
 
 /***********************FONTS***********************/
@@ -425,7 +425,6 @@ header{
 
 .parallax{
 	position: relative;
-	background-image: url('slider4.jpg');
 	background-position: 50% 0;
     background-attachment: fixed;
     -webkit-background-size: cover;
@@ -445,6 +444,14 @@ header{
 	img{
 		width: 100%;
 	}
+}
+
+.parallax_home{
+	background-image: url('slider4.jpg');
+}
+
+.parallax_service{
+	background-image: url('slider3.jpg');
 }
 
 .home_destiny_wrapper{
@@ -535,6 +542,79 @@ header{
 
 /***********************SERVICES***********************/
 
+.service_view_wrapper{
+	background-color: #f8f8f8;
+}
+
+.services_wrapper{
+	padding-top: 30px;
+	width: 1170px;
+	display: inline-block;
+}
+
+.service_details{
+	width: 50%;
+	display: inline-block;
+	margin-right: -5px;
+	margin-bottom: 45px;
+    margin-top: 30px;
+	vertical-align: top;
+	
+
+	div{
+		background-color: #fff;
+		margin: 0 15px 0 15px;
+		border-radius: 5px;
+		padding: 0 30px 35px 30px;
+
+		img{
+			background: #ff6600;
+			display: block;
+			margin: 0 auto;
+			border-radius: 90px;
+			border: 5px solid #F8F8F8;
+			position: relative;
+    		top: -45px;
+    		margin-bottom: -10px;
+		}
+
+		span{
+			font-size: 18px;
+    		line-height: 20px;
+    		font-weight: 700;
+    		letter-spacing: 1px;
+    		display: block;
+    		margin-bottom: 15px;
+		}
+
+		p{
+			display: block;
+			color: rgba(34,34,34,0.6);
+			font-size: 16px;
+			text-align: justify;
+		}
+	}
+
+}
+
+.process_wrapper{
+
+	background-color: #ff6600;
+
+	.second_title{
+		background-color: #ff6600;
+
+		h4{
+			color: #fff;
+			border-bottom: 3px solid #fff;
+		}
+
+		h2{
+			color: #fff;
+		}
+	}
+	
+}
 
 /***********************ABOUT***********************/
 
@@ -575,6 +655,10 @@ header{
 	    font-weight: 400;
 	    letter-spacing: 0.5px;
 	    text-transform: uppercase;
+	}
+
+	a{
+		color: #000;
 	}
 }
 
